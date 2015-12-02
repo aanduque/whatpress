@@ -1,0 +1,4 @@
+<li data-input-trigger>
+  <label class="fs-field-label fs-anim-upper" for="<?php echo $question['id']; ?>" <?php echo isset($question['info']) ? 'data-info="'.$question['info'].'"' : ''; ?>><?php echo $question['question']; ?></label>
+  <input class="fs-anim-lower <?php echo isset($question['class']) ? $question['class'] : ""; ?>" id="<?php echo $question['id']; ?>" name="<?php echo $question['id']; ?>" type="<?php echo $question['type']; ?>" placeholder="<?php echo $question['placeholder']; ?>" <?php echo $question['required'] ? "required" : ""; ?> <?php echo isset($question['min']) ? 'min="'.$question['min'].'"' : ''; ?> <?php echo isset($question['max']) ? 'max="'.$question['max'].'"' : ''; ?> <?php echo isset($question['step']) ? 'step="'.$question['step'].'"' : ''; ?>>
+</li>

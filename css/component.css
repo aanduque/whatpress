@@ -422,6 +422,10 @@ button.fs-continue,
 	background-repeat: no-repeat;
 }
 
+.fs-fields input.fs-rating::after {
+  content: "stars";
+}
+
 .fs-fields input.fs-mark[required] {
 	background-image: url(../img/dollar.svg), url(../img/abacusstar.svg);
 	background-position: 0% 0.15em, top right;
